@@ -44,6 +44,17 @@ $('.auto-play').click(function() {
 	visualSwiper.autoplay.start();
 })
 
+const eventSwiper = new Swiper('.event-swiper', {
+	loop:true,
+	navigation: {
+		nextEl: '.swiper-event-next',
+		prevEl: '.swiper-event-prev'
+	},
+	pagination: {
+		el: '.event-pagination',
+		clickable: true,
+	}
+})
 
 
 const promotionSwiper = new Swiper('.promotion_swiper', {
@@ -57,8 +68,27 @@ const promotionSwiper = new Swiper('.promotion_swiper', {
 	},
 	slidesPerView: 4,
 	spaceBetween: 30,
-})  //이거땜에 카드가 늘어남 고민을 해야 됨
+})
 
+$('.event-swiper button').click(function() {
+	const imgSrc = $(this).find('.img_box img').attr('src')
+	const txt1 = $(this).find('.txt_box strong').text()
+	const txt2 = $(this).find('.txt_box span:first-of-type').text()
+	const txt3 = $(this).find('.txt_box span:last-of-type').text()
+	$('.event_main_content').find('img').attr('src', imgSrc)
+	$('.event_main_content').find('.event_main_txt strong').text(txt1)
+	$('.event_main_content').find('.event_main_txt span:first-of-type').text(txt2)
+	$('.event_main_content').find('.event_main_txt span:last-of-type').text(txt3)
+})
+
+// const $simg = document.querySelectorAll('.event_content img')
+// for(simg of $simg) {
+// 	simg.addEventListener('click', function() {
+// 		let img = this.src
+// 		document.querySelector('.event_main_content img').src = img
+// 		console.log(.childNodes[0].text);
+// 	})
+// }
 
 
 
