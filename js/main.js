@@ -1,25 +1,22 @@
 $(window).scroll(function() {
 	if($(window).scrollTop() >= 10) {
-		$('header').addClass('scroll')
+		$('header').addClass('on')
 	}
 	else {
-		$('header').removeClass('scroll')
+		$('header').removeClass('on')
 	}
 })
 
 
 
 // Header
-$('#gnb .dep1').hover(function() {
+$('header').hover(function() {
 	$('#gnb .dep2_wrap').stop().slideDown()
 	$('header').addClass('on')
-	// $('.dep2_wrap').addClass('bg')
 }, function() {
 	$('#gnb .dep2_wrap').stop().slideUp();
 	$('header').removeClass('on')
-	// $('.dep2_wrap').removeClass('bg')
 });
-// $('#gnb .dep1').mouseleave()
 
 
 // Main
@@ -75,20 +72,17 @@ $('.event-swiper button').click(function() {
 	const txt1 = $(this).find('.txt_box strong').text()
 	const txt2 = $(this).find('.txt_box span:first-of-type').text()
 	const txt3 = $(this).find('.txt_box span:last-of-type').text()
+
 	$('.event_main_content').find('img').attr('src', imgSrc)
 	$('.event_main_content').find('.event_main_txt strong').text(txt1)
 	$('.event_main_content').find('.event_main_txt span:first-of-type').text(txt2)
 	$('.event_main_content').find('.event_main_txt span:last-of-type').text(txt3)
 })
 
-// const $simg = document.querySelectorAll('.event_content img')
-// for(simg of $simg) {
-// 	simg.addEventListener('click', function() {
-// 		let img = this.src
-// 		document.querySelector('.event_main_content img').src = img
-// 		console.log(.childNodes[0].text);
-// 	})
-// }
+$('.event_content .img_box').click(function() {
+	$('.skyhill').not(this).removeClass('active')
+	$(this).addClass('active')
+})
 
 
 
