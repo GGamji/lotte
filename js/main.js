@@ -55,6 +55,7 @@ const eventSwiper = new Swiper('.event-swiper', {
 
 
 const promotionSwiper = new Swiper('.promotion_swiper', {
+	loop:true,
 	navigation: {
 		nextEl: '.swiper-promotion-next',
 		prevEl: '.swiper-promotion-prev',

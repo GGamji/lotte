@@ -361,7 +361,7 @@ header #gnb .dep2 {
 .promotion .promotion_swiper span>strong {
 	font-size: 22px;color: red;
 }
-.promotion .promotion_navigtion {
+.promotion .promotion_navigation {
 	display: flex;justify-content: center;gap: 200px;
 	color: #FFF;
 }
