@@ -379,7 +379,7 @@ header #gnb .dep2 {
 	width: 12px;height: 12px;
 }
 .promotion .swiper-pagination-bullet {
-	opacity: .4;
+	opacity: .5;
 }
 .promotion .swiper-pagination-bullet-active {
 	opacity: 1;

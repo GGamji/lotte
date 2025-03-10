@@ -23,7 +23,7 @@ $('header').hover(function() {
 const visualSwiper = new Swiper('.visual_swiper', {
 	loop: true,
 	autoplay: {
-		delay: 6000,
+		delay: 5000,
 	},
 	navigation: {
 		nextEl: '.swiper-next',
