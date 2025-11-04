@@ -1,901 +1,988 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css"
+    />
 
-	<!-- JS -->
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js" integrity="sha256-sw0iNNXmOJbQhYFuC9OF2kOlD5KQKe1y5lfBn4C9Sjg=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script defer src="js/main.js"></script>
+    <!-- JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"
+      integrity="sha256-sw0iNNXmOJbQhYFuC9OF2kOlD5KQKe1y5lfBn4C9Sjg="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="js/main.js"></script>
 
-	<title>롯데스카이힐CC</title>
-</head>
-<body>
-<div id="wrap">
-	<header>
-		<div class="inner">
-			<h1><a href="#"><span class="screen_out">롯데스카이힐CC</span></a></h1>
-			<nav id="gnb">
-				<ul class="dep1">
-					<li><a href="#">통합예약</a>
-						<div class="dep2_wrap">
-							<ul class="dep2">
-								<li><a href="#">실시간 예약현황</a></li>
-								<li><a href="#">골프예약</a></li>
-								<li><a href="#">프로모션 예약</a></li>
-								<li><a href="#">예약가이드</a></li>
-							</ul>
-						</div>
-					</li>
-					<li><a href="#">클럽소개</a>
-						<div class="dep2_wrap">
-							<ul class="dep2">
-								<li><a href="#">제주CC</a></li>
-								<li><a href="#">부여CC</a></li>
-								<li><a href="#">시설소개</a></li>
-								<li><a href="#">코스소개</a></li>
-								<li><a href="#">오시는 길</a></li>
-							</ul>
-						</div>
-					</li>
-					<li><a href="#">스페셜 오퍼</a>
-						<div class="dep2_wrap">
-							<ul class="dep2">
-								<li><a href="#">이벤트</a></li>
-								<li><a href="#">프로모션</a></li>
-							</ul>
-						</div>
-					</li>
-					<li><a href="#">골프장소식</a>
-						<div class="dep2_wrap">
-							<ul class="dep2">
-								<li><a href="#">공지사항</a></li>
-								<li><a href="#">주변관광지</a></li>
-							</ul>
-						</div>
-					</li>
-					<li><a href="#">고객센터</a>
-						<div class="dep2_wrap">
-							<ul class="dep2">
-								<li><a href="#">FAQ</a></li>
-								<li><a href="#">고객의 소리</a></li>
-								<li><a href="#">서식자료실</a></li>
-								<li><a href="#">명의개서안내</a></li>
-								<li><a href="#">단체행사 문의</a></li>
-							</ul>
-						</div>
-					</li>
-					<li><a href="#">마이페이지</a>
-						<div class="dep2_wrap">
-							<ul class="dep2">
-								<li><a href="#">My club</a></li>
-								<li><a href="#">예약내역</a></li>
-								<li><a href="#">쿠폰함</a></li>
-								<li><a href="#">라운드스코어</a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</nav>
-			<ul class="util">
-				<li class="resort"><a href="#"><img src="./img/logo_resort_m.png" alt="">롯데리조트</a></li>
-				<li><a href="#">로그인</a></li>
-				<li><a href="#">회원가입</a></li>
-				<li><a href="#">예약조회</a></li>
-				<li><a href="#">분양회원</a></li>
-				<li><a href="#">멤버십</a></li>
-			</ul>
-		</div>
-	</header>
-	<main>
-		<section class="main_visual">
-			<div class="visual_swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide slide1">
-						<div class="slide_txt">
-							<span class="main-t">Challenge your limits <br> at SKYHILL</span>
-							<span>아름다운 자연을 품에 안은 최고의 컨트리클럽</span>
-						</div>
-					</div>
-					<div class="swiper-slide slide2">
-						<div class="slide_txt">
-							<span class="main-t">Challenge your limits <br> at SKYHILL</span>
-							<span>백제의 과거와 현재가 함께 공존하는 부여 명문 컨트리클럽</span>
-						</div>
-					</div>
-				</div>
-				<button class="swiper-prev"><i class="ri-arrow-left-s-line"></i></button>
-				<button class="swiper-next"><i class="ri-arrow-right-s-line"></i></button>
-				<div class="auto-controls">
-					<div class="auto-p">
-						<button class="auto-play"><i class="ri-play-circle-fill"></i></button>
-						<button class="auto-stop"><i class="ri-pause-circle-fill"></i></button>
-					</div>
-				</div>
-				<!-- <div class="swiper-scrollbar"></div> -->
-			</div>
-		</section>
-		<section class="event">
-			<div class="inner">
-				<h2>EVENT</h2>
-				<div class="e-nav">
-					<div class="tap">
-						<a href="#">전체</a>
-						<a href="#">제주CC</a>
-						<a href="#">부여CC</a>
-					</div>
-					<a href="" class="e-plus">자세히보기</a>
-				</div>
-				<div class="event-swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="event_first">
-								<button class="event_content">
-									<span class="number">01</span>
-									<div class="img_box">
-										<span class="img_bg"></span>
-										<img src="./img/event-1.jpg" alt="">
-									</div>
-									<div class="txt_box">
-										<div class="skyhill_box">
-											<span class="skyhill">제주CC</span>
-										</div>
-										<strong>'몸만가'서비스 제휴 이벤트</strong>
-										<span>편안한 제주 여행을 위한 몸만가 서비스</span>
-										<span>기간 : 2024.11.05~2024.12.31</span>
-									</div>
-								</button>
-								<button class="event_content">
-									<span class="number">02</span>
-									<div class="img_box">
-										<span class="img_bg"></span>
-										<img src="./img/event-2.jpg" alt="">
-									</div>
-									<div class="txt_box">
-										<div class="skyhill_box">
-											<span class="skyhill">부여CC</span>
-										</div>
-										<strong>11월 절기 이벤트 with 연작</strong>
-										<span>연작과 함께하는 11월 라운드 고객을 위한 특별 이벤트</span>
-										<span>기간 : 2024.10.22~2024.11.21</span>
-									</div>
-								</button>
-								<button class="event_content">
-									<span class="number">03</span>
-									<div class="img_box">
-										<span class="img_bg"></span>
-										<img src="./img/event-3.png" alt="">
-									</div>
-									<div class="txt_box">
-										<div class="skyhill_box">
-											<span class="skyhill">제주CC</span>
-										</div>
-										<strong>B-DAY 생일카트 이벤트</strong>
-										<span>생일카트 이벤트로 특별한 생일</span>
-										<span>기간 : 2024.08.21~2024.12.31</span>
-									</div>
-								</button>
-								<button class="event_content">
-									<span class="number">04</span>
-									<div class="img_box">
-										<span class="img_bg"></span>
-										<img src="./img/event-4.jpg" alt="">
-									</div>
-									<div class="txt_box">
-										<div class="skyhill_box">
-											<span class="skyhill">제주CC</span>
-										</div>
-										<strong>스페셜 카트 이벤트</strong>
-										<span>한우버거 &middot; 새우버거 스페셜 카트</span>
-										<span>기간 : 2024.09.26~종료 시</span>
-									</div>
-								</button>
-							</div>
-							<div class="event_main">
-								<button class="event_main_content">
-									<img src="./img/event-1.jpg" alt="">
-									<div class="event_main_txt">
-										<div class="main_skyhill_box">
-											<span class="main_skyhill">제주CC</span>
-										</div>
-										<strong>'몸만가'서비스 제휴 이벤트</strong>
-										<span>편안한 제주 여행을 위한 몸만가 서비스</span>
-										<span>기간 : 2024.11.05~2024.12.31</span>
-									</div>
-								</button>
-								<img src="./img/event-shadow.png" alt="">
-							</div>
-							<div class="event_last">
-								<button class="event_content">
-									<span class="number">05</span>
-									<div class="img_box">
-										<span class="img_bg"></span>
-										<img src="./img/event-5.jpg" alt="">
-									</div>
-									<div class="txt_box">
-										<div class="skyhill_box">
-											<span class="skyhill">제주CC</span>
-										</div>
-										<strong>제휴 호텔 할인 혜택</strong>
-										<span>제주CC 내장객을 위한 특별한 혜택</span>
-										<span>기간 : 2024.03.01~2024.12.31</span>
-									</div>
-								</button>
-								<button class="event_content">
-									<span class="number">06</span>
-									<div class="img_box">
-										<span class="img_bg"></span>
-										<img src="./img/event-6.jpg" alt="">
-									</div>
-									<div class="txt_box">
-										<div class="skyhill_box">
-											<span class="skyhill">부여CC</span>
-										</div>
-										<strong>스페셜 카트 이벤트</strong>
-										<span>핫식스 &middot; 크러시 스페셜 카트</span>
-										<span>기간 : 2024.03.01~2024.12.31</span>
-									</div>
-								</button>
-								<button class="event_content">
-									<span class="number">07</span>
-									<div class="img_box">
-										<span class="img_bg"></span>
-										<img src="./img/event-7.jpg" alt="">
-									</div>
-									<div class="txt_box">
-										<div class="skyhill_box">
-											<span class="skyhill">제주CC</span>
-										</div>
-										<strong>2024년 연간 이벤트</strong>
-										<span>주말 이벤트로 즐거운 라운딩</span>
-										<span>기간 : 2024.02.09~2024.12.31</span>
-									</div>
-								</button>
-								<button class="event_content">
-									<span class="number">08</span>
-									<div class="img_box">
-										<span class="img_bg"></span>
-										<img src="./img/event-8.jpg" alt="">
-									</div>
-									<div class="txt_box">
-										<div class="skyhill_box">
-											<span class="skyhill">제주CC</span>
-										</div>
-										<strong>시그니처 프로모션</strong>
-										<span>제주CC만의 Signature Promotion</span>
-										<span>기간 : 2024.01.01~2024.12.31</span>
-									</div>
-								</button>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="event_first">
-								<button class="event_content">
-									<span class="number">01</span>
-									<div class="img_box">
-										<span class="img_bg"></span>
-										<img src="./img/event-9.jpg" alt="">
-									</div>
-									<div class="txt_box">
-										<div class="skyhill_box">
-											<span class="skyhill">제주CC</span>
-										</div>
-										<strong>제주 롯데호텔앤리조트 투숙객 혜택</strong>
-										<span>투숙색을 위한 특별 혜택</span>
-										<span>기간 : 2024.02.01~종료 시</span>
-									</div>
-								</button>
-								<button class="event_content">
-									<span class="number">02</span>
-									<div class="img_box">
-										<span class="img_bg"></span>
-										<img src="./img/event-10.jpg" alt="">
-									</div>
-									<div class="txt_box">
-										<div class="skyhill_box">
-											<span class="skyhill">부여CC</span>
-										</div>
-										<strong>세인트나인 홀인원 &middot; 이글존 이벤트</strong>
-										<span>롯데스카이힐CC 부여x세인트나인</span>
-										<span>기간 : 2024.02.13~2024.12.31</span>
-									</div>
-								</button>
-								<button class="event_content">
-									<span class="number">03</span>
-									<div class="img_box">
-										<img src="./img/event-default.png" alt="">
-									</div>
-								</button>
-								<button class="event_content">
-									<span class="number">04</span>
-									<div class="img_box">
-										<img src="./img/event-default.png" alt="">
-									</div>
-								</button>
-							</div>
-							<div class="event_main">
-								<button class="event_main_content">
-									<img src="./img/event-1.jpg" alt="">
-									<div class="event_main_txt">
-										<strong>'몸만가'서비스 제휴 이벤트</strong>
-										<span>편안한 제주 여행을 위한 몸만가 서비스</span>
-										<span>기간 : 2024.11.05~2024.12.31</span>
-									</div>
-								</button>
-								<img src="./img/event-shadow.png" alt="">
-							</div>
-							<div class="event_last">
-								<button class="event_content">
-									<span class="number">05</span>
-									<div class="img_box">
-										<img src="./img/event-default.png" alt="">
-									</div>
-								</button>
-								<button class="event_content">
-									<span class="number">06</span>
-									<div class="img_box">
-										<img src="./img/event-default.png" alt="">
-									</div>
-								</button>
-								<button class="event_content">
-									<span class="number">07</span>
-									<div class="img_box">
-										<img src="./img/event-default.png" alt="">
-									</div>
-								</button>
-								<button class="event_content">
-									<span class="number">08</span>
-									<div class="img_box">
-										<img src="./img/event-default.png" alt="">
-									</div>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="event-pagination"></div>
-					<div class="event_navigtion">
-						<div class="swiper-event-prev"><i class="ri-arrow-left-s-line"></i></div>
-						<div class="swiper-event-next"><i class="ri-arrow-right-s-line"></i></div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="promotion">
-			<div class="inner">
-				<h2>PROMOTION</h2>
-				<div class="p-nav">
-					<div class="tap">
-						<a href="#">전체</a>
-						<a href="#">제주CC</a>
-						<a href="#">부여CC</a>
-					</div>
-					<a href="#" class="p-plus">자세히보기</a>
-				</div>
-				<div class="promotion_swiper">
-					<div class="swiper-wrapper">
-						<a class="p-m-1 swiper-slide">
-							<img src="img/promotion1.jpg" alt="">
-							<div class="p-memeberList">
-								<div class="p-member-l">
-									<!-- <span>부여CC</span> -->
-									<strong>2인 라운드 프로모션</strong>
-									<span>기간:2024.07.22 ~ 2024.08.31</span>
-								</div>
-								<div class="p-member-r">
-									<span>1인 180,000원~ <strong>360,000원</strong></span>
-								</div>
-							</div>
-						</a>
-						<a class="p-m-2 swiper-slide">
-							<img src="img/promotion2.jpg" alt="">
-							<div class="p-memeberList">
-								<div class="p-member-l">
-									<!-- <span>부여CC</span> -->
-									<strong>2024 Golf The City</strong>
-									<span>기간:2024.06.01 ~ 2024.08.31</span>
-								</div>
-								<div class="p-member-r">
-									<span>2인 기준 <strong>300,000원 ~</strong></span>
-								</div>
-							</div>
-						</a>
-						<a class="p-m-3 swiper-slide">
-							<img src="img/promotion3.jpg" alt="">
-							<div class="p-memeberList">
-								<div class="p-member-l">
-									<!-- <span>부여CC</span> -->
-									<strong>L Swing Buddy</strong>
-									<span>기간:2024.06.01 ~ 2024.08.31</span>
-								</div>
-								<div class="p-member-r">
-									<span>2인 기준 <strong>400,000원 ~</strong></span>
-								</div>
-							</div>
-						</a>
-						<a class="p-m-4 swiper-slide">
-							<img src="img/promotion4.jpg" alt="">
-							<div class="p-memeberList">
-								<div class="p-member-l">
-									<!-- <span>부여CC</span> -->
-									<strong>2024 월별 프로모션 그린피 요금안내</strong>
-									<span>기간:2024.03.01 ~ 2024.09.30</span>
-								</div>
-								<div class="p-member-r">
-									<span>1인 130,000원~ <strong>520,000원 ~</strong></span>
-								</div>
-							</div>
-						</a>
-						<a class="p-m-5 swiper-slide">
-							<img src="img/promotion5.jpg" alt="">
-							<div class="p-memeberList">
-								<div class="p-member-l">
-									<!-- <span>부여CC</span> -->
-									<strong>2024 Villas Golf</strong>
-									<span>기간:2024.07.01 ~ 2024.11.30</span>
-								</div>
-								<div class="p-member-r">
-									<span>1인 364,000원~ <strong>1,456,000원 ~</strong></span>
-								</div>
-							</div>
-						</a>
-						<a class="p-m-6 swiper-slide">
-							<img src="img/promotion6.jpg" alt="">
-							<div class="p-memeberList">
-								<div class="p-member-l">
-									<strong>신한카드 연간 제휴 혜택</strong>
-									<span>기간:2023.12.20 ~ 2024.12.20</span>
-								</div>
-								<div class="p-member-r">
-									<span>1인 146,000원~ <strong>584,000원 ~</strong></span>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="promotion-pagination"></div>
-					<div class="promotion_navigation">
-						<div class="swiper-promotion-prev"><i class="ri-arrow-left-s-line"></i></div>
-						<div class="swiper-promotion-next"><i class="ri-arrow-right-s-line"></i></div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="club">
-			<div class="inner">
-				<h2>CLUB</h2>
-				<div class="c-content">
-					<img src="./img/club_l.png" alt="">
-					<img src="./img/main-club-r-bg-2023.png" alt="">
-					<div class="c-content-l">
-						<img src="img/club1.jpg" alt="">
-						<div class="c-txt-l">
-							<div class="c-t">
-								<span>한라산 숲 속 '힐링'명문</span>
-								<a href="#">제주CC</a>
-							</div>
-							<div class="c-b">
-								<a href="#">코스소개</a>
-								<a href="#">시설소개</a>
-								<a href="#">오시는길</a>
-							</div>
-						</div>
-					</div>
-					<div class="c-content-r">
-						<img src="img/club2.jpg" alt="">
-						<div class="c-txt-r">
-							<div class="c-t">
-								<span>백제의 역사를 마주한</span>
-								<a href="#">부여CC</a>
-							</div>
-							<div class="c-b">
-								<a href="#">코스소개</a>
-								<a href="#">시설소개</a>
-								<a href="#">오시는길</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="membership">
-			<div class="inner">
-				<h3>롯데리조트 통합멤버십</h3>
-				<div class="m-nav">
-					<div class="m-sale-all">
-						<div class="m-sale">
-							<img src="img/membership1.png" alt="">
-							<div class="m-txt">
-								<strong>리조트</strong>
-								<span>롯데리조트 온라인 최저가 <br>비회원 대비 최대 <span class="m-txt-point">10% 할인</span></span>
-							</div>
-						</div>
-						<div class="m-sale">
-							<img src="img/membership2.png" alt="">
-							<div class="m-txt">
-								<strong>워터파크 &middot; 아쿠아가든</strong>
-								<span>테마파크 이용권 <br>정상가 대비 최대 <span class="m-txt-point">45% 할인</span></span>
-							</div>
-						</div>
-						<div class="m-sale">
-							<img src="img/membership3.png" alt="">
-							<div class="m-txt">
-								<strong>골프</strong>
-								<span>롯데스카이힐CC <br><span class="m-txt-point">스페셜 프로모션</span></span>
-							</div>
-						</div>
-					</div>
-					<p>L.POINT를 통해 <strong>롯데리조트 통합멤버십</strong>에 가입하고, <strong>여행 &middot; 골프 &middot; 레저</strong>를 하나의 아이디로 누리세요!</p>
-					<a href="#">
-						<span>롯데리조트 통합멤버십 자세히보기</span>
-						<i class="ri-arrow-right-s-line"></i>
-					</a>
-				</div>
-			</div>
-		</section>
-		<section class="notice">
-			<div class="inner">
-				<div class="notice-title">
-					<div class="n-nav">
-						<span>LOTTE SKYHILL CC NEWS</span>
-						<h3>공지사항</h3>
-					</div>
-					<div class="n-tab">
-						<div class="n-t-city">
-							<a href="#">전체</a>
-							<a href="#">제주CC</a>
-							<a href="#">부여CC</a>
-						</div>
-						<a href="#" class="n-plus">자세히보기</a>
-					</div>
-				</div>
-				<div class="notice-news">
-					<a href="#" class="n-news-l">
-						<img src="img/notice.png" alt="">
-						<div class="n-main">
-							<div class="notice-first">
-								<span>[제주CC]</span>
-								<span>6월 예약 오픈 안내</span>
-							</div>
-							<span class="n-data">2024.03.28</span>
-						</div>
-					</a>
-					<div class="n-news-r">
-						<a href="#">
-							<div class="news-r-first">
-								<span>[롯데스카이힐CC]</span>
-								<span>개인정보처리방침 변경 안내</span>
-							</div>
-							<span class="n-data">2024.01.25</span>
-						</a>
-						<a href="#">
-							<div class="news-r-first">
-								<span>[제주CC]</span>
-								<span>제주 공항 셔틀버스 운영 안내</span>
-							</div>
-							<span class="n-data">2024.01.25</span>
-						</a>
-						<a href="#">
-							<div class="news-r-first">
-								<span>[제주CC]</span>
-								<span>2024 그린피 인상안내</span>
-							</div>
-							<span class="n-data">2024.01.25</span>
-						</a>
-						<a href="#">
-							<div class="news-r-first">
-								<span>[부여CC]</span>
-								<span>2024 그린피 인상안내</span>
-							</div>
-							<span class="n-data">2024.01.17</span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="links">
-			<div class="inner">
-				<div class="links_content">
-					<div class="links_resort">
-						<strong>LOTTE RESORT</strong>
-						<div class="resort_content">
-							<a href="#">
-								<img src="./img/resort-sokcho.jpg" alt="">
-								<strong>SOKCHO</strong>
-								<span>동해와 설악이 만난 그곳에, 속초</span>
-							</a>
-							<a href="#">
-								<img src="./img/resort-buyeo.jpg" alt="">
-								<strong>BUYEO</strong>
-								<span>백제의 신비로운 유적지, 부여</span>
-							</a>
-							<a href="#">
-								<img src="./img/resort-gimhae.jpg" alt="">
-								<strong>GIMHAE</strong>
-								<span>가야 금통관의 유려한 아름다움, 김해</span>
-							</a>
-							<a href="#">
-								<img src="./img/resort-jeju.jpg" alt="">
-								<strong>JEJU ARTVILLAS</strong>
-								<span>자연, 건축 그리고 휴식, 제주</span>
-							</a>
-						</div>
-					</div>
-					<div class="links_skyhill">
-						<strong>LOTTE SKYHILL CC</strong>
-						<div class="skyhill_content">
-							<a href="#">
-								<img src="./img/sky-jeju.jpg" alt="">
-								<strong>JEJU</strong>
-								<span>한라산 숲 속 '힐링'코스, 제주</span>
-							</a>
-							<a href="#">
-								<img src="./img/sky-buyeo.jpg" alt="">
-								<strong>BUYEO</strong>
-								<span>백제의 역사를 마주한 코스, 부여</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-	<footer>
-		<div class="inner">
-			<div class="footer_address">
-				<h2><a href="#"><span class="screen_out">lotte skyhill cc</span></a></h2>
-				<div class="footer_content">
-					<div class="footer_link">
-						<a href="#">개인정보처리방침</a>
-						<a href="#">영상정보처리기기운영</a>
-						<a href="#">이용약관</a>
-						<a href="#">임직원인증</a>
-						<a href="#">(주)호텔롯데 기업 소개</a>
-					</div>
-					<address>(주)호텔롯데 롯데리조트 서울특별시 중구 을지로 30 대표이사 김태홍 <br> 사업자등록번호 104-85-27860 <br> 통신판매신고번호 2004-서울중구-2802호 <br> 대표번호 1566-4700</address>
-					<span>COPYRIGHT©2020LOTTE SKYHILL.ALLRIGHT RESERVED.</span>
-				</div>
-			</div>
-			<div class="footer_familysite">
-				<button>
-					<span>Family Site</span>
-					<i class="ri-arrow-down-s-fill"></i>
-				</button>
-				<div class="familysite_content">
-					<ul>
-						<li>
-							<a href="#">롯데리조트</a>
-						</li>
-						<li>
-							<a href="#">롯데그룹</a>
-						</li>
-						<li>
-							<a href="#">롯데그룹채용</a>
-						</li>
-						<li>
-							<a href="#">(주)호텔롯데</a>
-						</li>
-						<li>
-							<a href="#">롯데웰푸드</a>
-						</li>
-						<li>
-							<span>롯데칠성음료</span>
-						</li>
-						<li>
-							<a href="#">-롯데칠성음료</a>
-						</li>
-						<li>
-							<a href="#">-롯데칠성몰</a>
-						</li>
-						<li>
-							<a href="#">롯데리아</a>
-						</li>
-						<li>
-							<a href="#">-롯데리아몰</a>
-						</li>
-						<li>
-							<span>엔제리너스</span>
-						</li>
-						<li>
-							<a href="#">-엔제리너스</a>
-						</li>
-						<li>
-							<a href="#">-엔제리너스몰</a>
-						</li>
-						<li>
-							<span>롯데푸드</span>
-						</li>
-						<li>
-							<a href="#">-롯데푸드</a>
-						</li>
-						<li>
-							<a href="#">-파스퇴르</a>
-						</li>
-						<li>
-							<a href="#">-파스퇴르몰</a>
-						</li>
-						<li>
-							<a href="#">-파스퇴르아이</a>
-						</li>
-						<li>
-							<a href="#">롯데아사히주류</a>
-						</li>
-						<li>
-							<a href="#">크리스피크림도넛</a>
-						</li>
-						<li>
-							<a href="#">롯데백화점</a>
-						</li>
-						<li>
-							<a href="#">-엘롯데</a>
-						</li>
-						<li>
-							<a href="#">-롯데아울렛</a>
-						</li>
-						<li>
-							<a href="#">-상품본부</a>
-						</li>
-						<li>
-							<a href="#">롯데마트</a>
-						</li>
-						<li>
-							<a href="#">-롯데마트 홍보</a>
-						</li>
-						<li>
-							<a href="#">롯데슈퍼</a>
-						</li>
-						<li>
-							<a href="#">롯데시네마</a>
-						</li>
-						<li>
-							<a href="#">롯데홈쇼핑</a>
-						</li>
-						<li>
-							<a href="#">코리아세븐</a>
-						</li>
-						<li>
-							<a href="#">유니클로</a>
-						</li>
-						<li>
-							<a href="#">롯데상사</a>
-						</li>
-						<li>
-							<a href="#">롯데닷컴</a>
-						</li>
-						<li>
-							<a href="#">롯데피플네트웍스</a>
-						</li>
-						<li>
-							<a href="#">샤롯데시어터</a>
-						</li>
-						<li>
-							<a href="#">H&B(롭스)</a>
-						</li>
-						<li>
-							<a href="#">롯데호텔</a>
-						</li>
-						<li>
-							<a href="#">롯데면세점</a>
-						</li>
-						<li>
-							<a href="#">롯데인터넷면세점</a>
-						</li>
-						<li>
-							<a href="#">롯데월드</a>
-						</li>
-						<li>
-							<a href="#">롯데물산</a>
-						</li>
-						<li>
-							<a href="#">롯데제이티비</a>
-						</li>
-						<li>
-							<span>롯데손해보험</span>
-						</li>
-						<li>
-							<a href="#">-롯데손해보험</a>
-						</li>
-						<li>
-							<a href="#">-롯데하우머치</a>
-						</li>
-						<li>
-							<a href="#">롯데카드</a>
-						</li>
-						<li>
-							<a href="#">롯데멤버스</a>
-						</li>
-						<li>
-							<a href="#">롯데케피탈</a>
-						</li>
-						<li>
-							<span>롯데건설</span>
-						</li>
-						<li>
-							<a href="#">-롯데건설</a>
-						</li>
-						<li>
-							<a href="#">-롯데캐슬</a>
-						</li>
-						<li>
-							<span>한국후지필름</span>
-						</li>
-						<li>
-							<a href="#">-한국후지필름</a>
-						</li>
-						<li>
-							<a href="#">-한국후지필름 쇼핑몰</a>
-						</li>
-						<li>
-							<span>롯데알미늄</span>
-						</li>
-						<li>
-							<a href="#">-롯데알미늄</a>
-						</li>
-						<li>
-							<a href="#">-롯데이라이프</a>
-						</li>
-						<li>
-							<a href="#">롯데케미칼</a>
-						</li>
-						<li>
-							<a href="#">롯데엠시시</a>
-						</li>
-						<li>
-							<a href="#">캐논코리아</a>
-						</li>
-						<li>
-							<a href="#">롯데기공</a>
-						</li>
-						<li>
-							<a href="#">롯데인재개발원</a>
-						</li>
-						<li>
-							<a href="#">롯데이노베이트</a>
-						</li>
-						<li>
-							<a href="#">롯데자이언츠</a>
-						</li>
-						<li>
-							<a href="#">롯데스카이힐CC</a>
-						</li>
-						<li>
-							<a href="#">대홍기획</a>
-						</li>
-						<li>
-							<a href="#">마이비</a>
-						</li>
-						<li>
-							<a href="#">롯데중앙연구소</a>
-						</li>
-						<li>
-							<a href="#">롯데로지스틱스</a>
-						</li>
-						<li>
-							<a href="#">롯데재단</a>
-						</li>
-						<li>
-							<span>롯데하이마트</span>
-						</li>
-						<li>
-							<a href="#">-롯데하이마트</a>
-						</li>
-						<li>
-							<a href="#">롯데콘서트홀</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="footer_links">
-				<a href="#"><img src="./img/affi-list.png" alt=""><span class="screen_out">lotte resort</span></a>
-			</div>
-		</div>
-	</footer>
-</div>
-</body>
+    <title>롯데스카이힐CC</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="inner">
+          <h1>
+            <a href="#"><span class="screen_out">롯데스카이힐CC</span></a>
+          </h1>
+          <nav id="gnb">
+            <ul class="dep1">
+              <li>
+                <a href="#">통합예약</a>
+                <div class="dep2_wrap">
+                  <ul class="dep2">
+                    <li><a href="#">실시간 예약현황</a></li>
+                    <li><a href="#">골프예약</a></li>
+                    <li><a href="#">프로모션 예약</a></li>
+                    <li><a href="#">예약가이드</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">클럽소개</a>
+                <div class="dep2_wrap">
+                  <ul class="dep2">
+                    <li><a href="#">제주CC</a></li>
+                    <li><a href="#">부여CC</a></li>
+                    <li><a href="#">시설소개</a></li>
+                    <li><a href="#">코스소개</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">스페셜 오퍼</a>
+                <div class="dep2_wrap">
+                  <ul class="dep2">
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">프로모션</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">골프장소식</a>
+                <div class="dep2_wrap">
+                  <ul class="dep2">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">주변관광지</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">고객센터</a>
+                <div class="dep2_wrap">
+                  <ul class="dep2">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">고객의 소리</a></li>
+                    <li><a href="#">서식자료실</a></li>
+                    <li><a href="#">명의개서안내</a></li>
+                    <li><a href="#">단체행사 문의</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">마이페이지</a>
+                <div class="dep2_wrap">
+                  <ul class="dep2">
+                    <li><a href="#">My club</a></li>
+                    <li><a href="#">예약내역</a></li>
+                    <li><a href="#">쿠폰함</a></li>
+                    <li><a href="#">라운드스코어</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <ul class="util">
+            <li class="resort">
+              <a href="#"
+                ><img src="./img/logo_resort_m.png" alt="" />롯데리조트</a
+              >
+            </li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">예약조회</a></li>
+            <li><a href="#">분양회원</a></li>
+            <li><a href="#">멤버십</a></li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <section class="main_visual">
+          <div class="visual_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide1">
+                <div class="slide_txt">
+                  <span class="main-t"
+                    >Challenge your limits <br />
+                    at SKYHILL</span
+                  >
+                  <span>아름다운 자연을 품에 안은 최고의 컨트리클럽</span>
+                </div>
+              </div>
+              <div class="swiper-slide slide2">
+                <div class="slide_txt">
+                  <span class="main-t"
+                    >Challenge your limits <br />
+                    at SKYHILL</span
+                  >
+                  <span
+                    >백제의 과거와 현재가 함께 공존하는 부여 명문
+                    컨트리클럽</span
+                  >
+                </div>
+              </div>
+            </div>
+            <button class="swiper-prev">
+              <i class="ri-arrow-left-s-line"></i>
+            </button>
+            <button class="swiper-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </button>
+            <div class="auto-controls">
+              <div class="auto-p">
+                <button class="auto-play">
+                  <i class="ri-play-circle-fill"></i>
+                </button>
+                <button class="auto-stop">
+                  <i class="ri-pause-circle-fill"></i>
+                </button>
+              </div>
+            </div>
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+        </section>
+        <section class="event">
+          <div class="inner">
+            <h2>EVENT</h2>
+            <div class="e-nav">
+              <div class="tap">
+                <a href="#">전체</a>
+                <a href="#">제주CC</a>
+                <a href="#">부여CC</a>
+              </div>
+              <a href="" class="e-plus">자세히보기</a>
+            </div>
+            <div class="event-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="event_first">
+                    <button class="event_content">
+                      <span class="number">01</span>
+                      <div class="img_box">
+                        <span class="img_bg"></span>
+                        <img src="./img/event-1.jpg" alt="" />
+                      </div>
+                      <div class="txt_box">
+                        <div class="skyhill_box">
+                          <span class="skyhill">제주CC</span>
+                        </div>
+                        <strong>'몸만가'서비스 제휴 이벤트</strong>
+                        <span>편안한 제주 여행을 위한 몸만가 서비스</span>
+                        <span>기간 : 2024.11.05~2024.12.31</span>
+                      </div>
+                    </button>
+                    <button class="event_content">
+                      <span class="number">02</span>
+                      <div class="img_box">
+                        <span class="img_bg"></span>
+                        <img src="./img/event-2.jpg" alt="" />
+                      </div>
+                      <div class="txt_box">
+                        <div class="skyhill_box">
+                          <span class="skyhill">부여CC</span>
+                        </div>
+                        <strong>11월 절기 이벤트 with 연작</strong>
+                        <span
+                          >연작과 함께하는 11월 라운드 고객을 위한 특별
+                          이벤트</span
+                        >
+                        <span>기간 : 2024.10.22~2024.11.21</span>
+                      </div>
+                    </button>
+                    <button class="event_content">
+                      <span class="number">03</span>
+                      <div class="img_box">
+                        <span class="img_bg"></span>
+                        <img src="./img/event-3.png" alt="" />
+                      </div>
+                      <div class="txt_box">
+                        <div class="skyhill_box">
+                          <span class="skyhill">제주CC</span>
+                        </div>
+                        <strong>B-DAY 생일카트 이벤트</strong>
+                        <span>생일카트 이벤트로 특별한 생일</span>
+                        <span>기간 : 2024.08.21~2024.12.31</span>
+                      </div>
+                    </button>
+                    <button class="event_content">
+                      <span class="number">04</span>
+                      <div class="img_box">
+                        <span class="img_bg"></span>
+                        <img src="./img/event-4.jpg" alt="" />
+                      </div>
+                      <div class="txt_box">
+                        <div class="skyhill_box">
+                          <span class="skyhill">제주CC</span>
+                        </div>
+                        <strong>스페셜 카트 이벤트</strong>
+                        <span>한우버거 &middot; 새우버거 스페셜 카트</span>
+                        <span>기간 : 2024.09.26~종료 시</span>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="event_main">
+                    <button class="event_main_content">
+                      <img src="./img/event-1.jpg" alt="" />
+                      <div class="event_main_txt">
+                        <div class="main_skyhill_box">
+                          <span class="main_skyhill">제주CC</span>
+                        </div>
+                        <strong>'몸만가'서비스 제휴 이벤트</strong>
+                        <span>편안한 제주 여행을 위한 몸만가 서비스</span>
+                        <span>기간 : 2024.11.05~2024.12.31</span>
+                      </div>
+                    </button>
+                    <img src="./img/event-shadow.png" alt="" />
+                  </div>
+                  <div class="event_last">
+                    <button class="event_content">
+                      <span class="number">05</span>
+                      <div class="img_box">
+                        <span class="img_bg"></span>
+                        <img src="./img/event-5.jpg" alt="" />
+                      </div>
+                      <div class="txt_box">
+                        <div class="skyhill_box">
+                          <span class="skyhill">제주CC</span>
+                        </div>
+                        <strong>제휴 호텔 할인 혜택</strong>
+                        <span>제주CC 내장객을 위한 특별한 혜택</span>
+                        <span>기간 : 2024.03.01~2024.12.31</span>
+                      </div>
+                    </button>
+                    <button class="event_content">
+                      <span class="number">06</span>
+                      <div class="img_box">
+                        <span class="img_bg"></span>
+                        <img src="./img/event-6.jpg" alt="" />
+                      </div>
+                      <div class="txt_box">
+                        <div class="skyhill_box">
+                          <span class="skyhill">부여CC</span>
+                        </div>
+                        <strong>스페셜 카트 이벤트</strong>
+                        <span>핫식스 &middot; 크러시 스페셜 카트</span>
+                        <span>기간 : 2024.03.01~2024.12.31</span>
+                      </div>
+                    </button>
+                    <button class="event_content">
+                      <span class="number">07</span>
+                      <div class="img_box">
+                        <span class="img_bg"></span>
+                        <img src="./img/event-7.jpg" alt="" />
+                      </div>
+                      <div class="txt_box">
+                        <div class="skyhill_box">
+                          <span class="skyhill">제주CC</span>
+                        </div>
+                        <strong>2024년 연간 이벤트</strong>
+                        <span>주말 이벤트로 즐거운 라운딩</span>
+                        <span>기간 : 2024.02.09~2024.12.31</span>
+                      </div>
+                    </button>
+                    <button class="event_content">
+                      <span class="number">08</span>
+                      <div class="img_box">
+                        <span class="img_bg"></span>
+                        <img src="./img/event-8.jpg" alt="" />
+                      </div>
+                      <div class="txt_box">
+                        <div class="skyhill_box">
+                          <span class="skyhill">제주CC</span>
+                        </div>
+                        <strong>시그니처 프로모션</strong>
+                        <span>제주CC만의 Signature Promotion</span>
+                        <span>기간 : 2024.01.01~2024.12.31</span>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="event_first">
+                    <button class="event_content">
+                      <span class="number">01</span>
+                      <div class="img_box">
+                        <span class="img_bg"></span>
+                        <img src="./img/event-9.jpg" alt="" />
+                      </div>
+                      <div class="txt_box">
+                        <div class="skyhill_box">
+                          <span class="skyhill">제주CC</span>
+                        </div>
+                        <strong>제주 롯데호텔앤리조트 투숙객 혜택</strong>
+                        <span>투숙색을 위한 특별 혜택</span>
+                        <span>기간 : 2024.02.01~종료 시</span>
+                      </div>
+                    </button>
+                    <button class="event_content">
+                      <span class="number">02</span>
+                      <div class="img_box">
+                        <span class="img_bg"></span>
+                        <img src="./img/event-10.jpg" alt="" />
+                      </div>
+                      <div class="txt_box">
+                        <div class="skyhill_box">
+                          <span class="skyhill">부여CC</span>
+                        </div>
+                        <strong
+                          >세인트나인 홀인원 &middot; 이글존 이벤트</strong
+                        >
+                        <span>롯데스카이힐CC 부여x세인트나인</span>
+                        <span>기간 : 2024.02.13~2024.12.31</span>
+                      </div>
+                    </button>
+                    <button class="event_content">
+                      <span class="number">03</span>
+                      <div class="img_box">
+                        <img src="./img/event-default.png" alt="" />
+                      </div>
+                    </button>
+                    <button class="event_content">
+                      <span class="number">04</span>
+                      <div class="img_box">
+                        <img src="./img/event-default.png" alt="" />
+                      </div>
+                    </button>
+                  </div>
+                  <div class="event_main">
+                    <button class="event_main_content">
+                      <img src="./img/event-1.jpg" alt="" />
+                      <div class="event_main_txt">
+                        <strong>'몸만가'서비스 제휴 이벤트</strong>
+                        <span>편안한 제주 여행을 위한 몸만가 서비스</span>
+                        <span>기간 : 2024.11.05~2024.12.31</span>
+                      </div>
+                    </button>
+                    <img src="./img/event-shadow.png" alt="" />
+                  </div>
+                  <div class="event_last">
+                    <button class="event_content">
+                      <span class="number">05</span>
+                      <div class="img_box">
+                        <img src="./img/event-default.png" alt="" />
+                      </div>
+                    </button>
+                    <button class="event_content">
+                      <span class="number">06</span>
+                      <div class="img_box">
+                        <img src="./img/event-default.png" alt="" />
+                      </div>
+                    </button>
+                    <button class="event_content">
+                      <span class="number">07</span>
+                      <div class="img_box">
+                        <img src="./img/event-default.png" alt="" />
+                      </div>
+                    </button>
+                    <button class="event_content">
+                      <span class="number">08</span>
+                      <div class="img_box">
+                        <img src="./img/event-default.png" alt="" />
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="event-pagination"></div>
+              <div class="event_navigtion">
+                <div class="swiper-event-prev">
+                  <i class="ri-arrow-left-s-line"></i>
+                </div>
+                <div class="swiper-event-next">
+                  <i class="ri-arrow-right-s-line"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="promotion">
+          <div class="inner">
+            <h2>PROMOTION</h2>
+            <div class="p-nav">
+              <div class="tap">
+                <a href="#">전체</a>
+                <a href="#">제주CC</a>
+                <a href="#">부여CC</a>
+              </div>
+              <a href="#" class="p-plus">자세히보기</a>
+            </div>
+            <div class="promotion_swiper">
+              <div class="swiper-wrapper">
+                <a class="p-m-1 swiper-slide">
+                  <img src="img/promotion1.jpg" alt="" />
+                  <div class="p-memeberList">
+                    <div class="p-member-l">
+                      <!-- <span>부여CC</span> -->
+                      <strong>2인 라운드 프로모션</strong>
+                      <span>기간:2024.07.22 ~ 2024.08.31</span>
+                    </div>
+                    <div class="p-member-r">
+                      <span>1인 180,000원~ <strong>360,000원</strong></span>
+                    </div>
+                  </div>
+                </a>
+                <a class="p-m-2 swiper-slide">
+                  <img src="img/promotion2.jpg" alt="" />
+                  <div class="p-memeberList">
+                    <div class="p-member-l">
+                      <!-- <span>부여CC</span> -->
+                      <strong>2024 Golf The City</strong>
+                      <span>기간:2024.06.01 ~ 2024.08.31</span>
+                    </div>
+                    <div class="p-member-r">
+                      <span>2인 기준 <strong>300,000원 ~</strong></span>
+                    </div>
+                  </div>
+                </a>
+                <a class="p-m-3 swiper-slide">
+                  <img src="img/promotion3.jpg" alt="" />
+                  <div class="p-memeberList">
+                    <div class="p-member-l">
+                      <!-- <span>부여CC</span> -->
+                      <strong>L Swing Buddy</strong>
+                      <span>기간:2024.06.01 ~ 2024.08.31</span>
+                    </div>
+                    <div class="p-member-r">
+                      <span>2인 기준 <strong>400,000원 ~</strong></span>
+                    </div>
+                  </div>
+                </a>
+                <a class="p-m-4 swiper-slide">
+                  <img src="img/promotion4.jpg" alt="" />
+                  <div class="p-memeberList">
+                    <div class="p-member-l">
+                      <!-- <span>부여CC</span> -->
+                      <strong>2024 월별 프로모션 그린피 요금안내</strong>
+                      <span>기간:2024.03.01 ~ 2024.09.30</span>
+                    </div>
+                    <div class="p-member-r">
+                      <span>1인 130,000원~ <strong>520,000원 ~</strong></span>
+                    </div>
+                  </div>
+                </a>
+                <a class="p-m-5 swiper-slide">
+                  <img src="img/promotion5.jpg" alt="" />
+                  <div class="p-memeberList">
+                    <div class="p-member-l">
+                      <!-- <span>부여CC</span> -->
+                      <strong>2024 Villas Golf</strong>
+                      <span>기간:2024.07.01 ~ 2024.11.30</span>
+                    </div>
+                    <div class="p-member-r">
+                      <span>1인 364,000원~ <strong>1,456,000원 ~</strong></span>
+                    </div>
+                  </div>
+                </a>
+                <a class="p-m-6 swiper-slide">
+                  <img src="img/promotion6.jpg" alt="" />
+                  <div class="p-memeberList">
+                    <div class="p-member-l">
+                      <strong>신한카드 연간 제휴 혜택</strong>
+                      <span>기간:2023.12.20 ~ 2024.12.20</span>
+                    </div>
+                    <div class="p-member-r">
+                      <span>1인 146,000원~ <strong>584,000원 ~</strong></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="promotion-pagination"></div>
+              <div class="promotion_navigation">
+                <div class="swiper-promotion-prev">
+                  <img src="./img/prev.png" alt="" />
+                </div>
+                <div class="swiper-promotion-next">
+                  <img src="./img/next.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="club">
+          <div class="inner">
+            <h2>CLUB</h2>
+            <div class="c-content">
+              <img src="./img/club_l.png" alt="" />
+              <img src="./img/main-club-r-bg-2023.png" alt="" />
+              <div class="c-content-l">
+                <img src="img/club1.jpg" alt="" />
+                <div class="c-txt-l">
+                  <div class="c-t">
+                    <span>한라산 숲 속 '힐링'명문</span>
+                    <a href="#">제주CC</a>
+                  </div>
+                  <div class="c-b">
+                    <a href="#">코스소개</a>
+                    <a href="#">시설소개</a>
+                    <a href="#">오시는길</a>
+                  </div>
+                </div>
+              </div>
+              <div class="c-content-r">
+                <img src="img/club2.jpg" alt="" />
+                <div class="c-txt-r">
+                  <div class="c-t">
+                    <span>백제의 역사를 마주한</span>
+                    <a href="#">부여CC</a>
+                  </div>
+                  <div class="c-b">
+                    <a href="#">코스소개</a>
+                    <a href="#">시설소개</a>
+                    <a href="#">오시는길</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="membership">
+          <div class="inner">
+            <h3>롯데리조트 통합멤버십</h3>
+            <div class="m-nav">
+              <div class="m-sale-all">
+                <div class="m-sale">
+                  <img src="img/membership1.png" alt="" />
+                  <div class="m-txt">
+                    <strong>리조트</strong>
+                    <span
+                      >롯데리조트 온라인 최저가 <br />비회원 대비 최대
+                      <span class="m-txt-point">10% 할인</span></span
+                    >
+                  </div>
+                </div>
+                <div class="m-sale">
+                  <img src="img/membership2.png" alt="" />
+                  <div class="m-txt">
+                    <strong>워터파크 &middot; 아쿠아가든</strong>
+                    <span
+                      >테마파크 이용권 <br />정상가 대비 최대
+                      <span class="m-txt-point">45% 할인</span></span
+                    >
+                  </div>
+                </div>
+                <div class="m-sale">
+                  <img src="img/membership3.png" alt="" />
+                  <div class="m-txt">
+                    <strong>골프</strong>
+                    <span
+                      >롯데스카이힐CC <br /><span class="m-txt-point"
+                        >스페셜 프로모션</span
+                      ></span
+                    >
+                  </div>
+                </div>
+              </div>
+              <p>
+                L.POINT를 통해 <strong>롯데리조트 통합멤버십</strong>에
+                가입하고, <strong>여행 &middot; 골프 &middot; 레저</strong>를
+                하나의 아이디로 누리세요!
+              </p>
+              <a href="#">
+                <span>롯데리조트 통합멤버십 자세히보기</span>
+                <i class="ri-arrow-right-s-line"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="notice">
+          <div class="inner">
+            <div class="notice-title">
+              <div class="n-nav">
+                <span>LOTTE SKYHILL CC NEWS</span>
+                <h3>공지사항</h3>
+              </div>
+              <div class="n-tab">
+                <div class="n-t-city">
+                  <a href="#">전체</a>
+                  <a href="#">제주CC</a>
+                  <a href="#">부여CC</a>
+                </div>
+                <a href="#" class="n-plus">자세히보기</a>
+              </div>
+            </div>
+            <div class="notice-news">
+              <a href="#" class="n-news-l">
+                <img src="img/notice.png" alt="" />
+                <div class="n-main">
+                  <div class="notice-first">
+                    <span>[제주CC]</span>
+                    <span>6월 예약 오픈 안내</span>
+                  </div>
+                  <span class="n-data">2024.03.28</span>
+                </div>
+              </a>
+              <div class="n-news-r">
+                <a href="#">
+                  <div class="news-r-first">
+                    <span>[롯데스카이힐CC]</span>
+                    <span>개인정보처리방침 변경 안내</span>
+                  </div>
+                  <span class="n-data">2024.01.25</span>
+                </a>
+                <a href="#">
+                  <div class="news-r-first">
+                    <span>[제주CC]</span>
+                    <span>제주 공항 셔틀버스 운영 안내</span>
+                  </div>
+                  <span class="n-data">2024.01.25</span>
+                </a>
+                <a href="#">
+                  <div class="news-r-first">
+                    <span>[제주CC]</span>
+                    <span>2024 그린피 인상안내</span>
+                  </div>
+                  <span class="n-data">2024.01.25</span>
+                </a>
+                <a href="#">
+                  <div class="news-r-first">
+                    <span>[부여CC]</span>
+                    <span>2024 그린피 인상안내</span>
+                  </div>
+                  <span class="n-data">2024.01.17</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="links">
+          <div class="inner">
+            <div class="links_content">
+              <div class="links_resort">
+                <strong>LOTTE RESORT</strong>
+                <div class="resort_content">
+                  <a href="#">
+                    <img src="./img/resort-sokcho.jpg" alt="" />
+                    <strong>SOKCHO</strong>
+                    <span>동해와 설악이 만난 그곳에, 속초</span>
+                  </a>
+                  <a href="#">
+                    <img src="./img/resort-buyeo.jpg" alt="" />
+                    <strong>BUYEO</strong>
+                    <span>백제의 신비로운 유적지, 부여</span>
+                  </a>
+                  <a href="#">
+                    <img src="./img/resort-gimhae.jpg" alt="" />
+                    <strong>GIMHAE</strong>
+                    <span>가야 금통관의 유려한 아름다움, 김해</span>
+                  </a>
+                  <a href="#">
+                    <img src="./img/resort-jeju.jpg" alt="" />
+                    <strong>JEJU ARTVILLAS</strong>
+                    <span>자연, 건축 그리고 휴식, 제주</span>
+                  </a>
+                </div>
+              </div>
+              <div class="links_skyhill">
+                <strong>LOTTE SKYHILL CC</strong>
+                <div class="skyhill_content">
+                  <a href="#">
+                    <img src="./img/sky-jeju.jpg" alt="" />
+                    <strong>JEJU</strong>
+                    <span>한라산 숲 속 '힐링'코스, 제주</span>
+                  </a>
+                  <a href="#">
+                    <img src="./img/sky-buyeo.jpg" alt="" />
+                    <strong>BUYEO</strong>
+                    <span>백제의 역사를 마주한 코스, 부여</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="inner">
+          <div class="footer_address">
+            <h2>
+              <a href="#"><span class="screen_out">lotte skyhill cc</span></a>
+            </h2>
+            <div class="footer_content">
+              <div class="footer_link">
+                <a href="#">개인정보처리방침</a>
+                <a href="#">영상정보처리기기운영</a>
+                <a href="#">이용약관</a>
+                <a href="#">임직원인증</a>
+                <a href="#">(주)호텔롯데 기업 소개</a>
+              </div>
+              <address>
+                (주)호텔롯데 롯데리조트 서울특별시 중구 을지로 30 대표이사
+                김태홍 <br />
+                사업자등록번호 104-85-27860 <br />
+                통신판매신고번호 2004-서울중구-2802호 <br />
+                대표번호 1566-4700
+              </address>
+              <span>COPYRIGHT©2020LOTTE SKYHILL.ALLRIGHT RESERVED.</span>
+            </div>
+          </div>
+          <div class="footer_familysite">
+            <button>
+              <span>Family Site</span>
+              <i class="ri-arrow-down-s-fill"></i>
+            </button>
+            <div class="familysite_content">
+              <ul>
+                <li>
+                  <a href="#">롯데리조트</a>
+                </li>
+                <li>
+                  <a href="#">롯데그룹</a>
+                </li>
+                <li>
+                  <a href="#">롯데그룹채용</a>
+                </li>
+                <li>
+                  <a href="#">(주)호텔롯데</a>
+                </li>
+                <li>
+                  <a href="#">롯데웰푸드</a>
+                </li>
+                <li>
+                  <span>롯데칠성음료</span>
+                </li>
+                <li>
+                  <a href="#">-롯데칠성음료</a>
+                </li>
+                <li>
+                  <a href="#">-롯데칠성몰</a>
+                </li>
+                <li>
+                  <a href="#">롯데리아</a>
+                </li>
+                <li>
+                  <a href="#">-롯데리아몰</a>
+                </li>
+                <li>
+                  <span>엔제리너스</span>
+                </li>
+                <li>
+                  <a href="#">-엔제리너스</a>
+                </li>
+                <li>
+                  <a href="#">-엔제리너스몰</a>
+                </li>
+                <li>
+                  <span>롯데푸드</span>
+                </li>
+                <li>
+                  <a href="#">-롯데푸드</a>
+                </li>
+                <li>
+                  <a href="#">-파스퇴르</a>
+                </li>
+                <li>
+                  <a href="#">-파스퇴르몰</a>
+                </li>
+                <li>
+                  <a href="#">-파스퇴르아이</a>
+                </li>
+                <li>
+                  <a href="#">롯데아사히주류</a>
+                </li>
+                <li>
+                  <a href="#">크리스피크림도넛</a>
+                </li>
+                <li>
+                  <a href="#">롯데백화점</a>
+                </li>
+                <li>
+                  <a href="#">-엘롯데</a>
+                </li>
+                <li>
+                  <a href="#">-롯데아울렛</a>
+                </li>
+                <li>
+                  <a href="#">-상품본부</a>
+                </li>
+                <li>
+                  <a href="#">롯데마트</a>
+                </li>
+                <li>
+                  <a href="#">-롯데마트 홍보</a>
+                </li>
+                <li>
+                  <a href="#">롯데슈퍼</a>
+                </li>
+                <li>
+                  <a href="#">롯데시네마</a>
+                </li>
+                <li>
+                  <a href="#">롯데홈쇼핑</a>
+                </li>
+                <li>
+                  <a href="#">코리아세븐</a>
+                </li>
+                <li>
+                  <a href="#">유니클로</a>
+                </li>
+                <li>
+                  <a href="#">롯데상사</a>
+                </li>
+                <li>
+                  <a href="#">롯데닷컴</a>
+                </li>
+                <li>
+                  <a href="#">롯데피플네트웍스</a>
+                </li>
+                <li>
+                  <a href="#">샤롯데시어터</a>
+                </li>
+                <li>
+                  <a href="#">H&B(롭스)</a>
+                </li>
+                <li>
+                  <a href="#">롯데호텔</a>
+                </li>
+                <li>
+                  <a href="#">롯데면세점</a>
+                </li>
+                <li>
+                  <a href="#">롯데인터넷면세점</a>
+                </li>
+                <li>
+                  <a href="#">롯데월드</a>
+                </li>
+                <li>
+                  <a href="#">롯데물산</a>
+                </li>
+                <li>
+                  <a href="#">롯데제이티비</a>
+                </li>
+                <li>
+                  <span>롯데손해보험</span>
+                </li>
+                <li>
+                  <a href="#">-롯데손해보험</a>
+                </li>
+                <li>
+                  <a href="#">-롯데하우머치</a>
+                </li>
+                <li>
+                  <a href="#">롯데카드</a>
+                </li>
+                <li>
+                  <a href="#">롯데멤버스</a>
+                </li>
+                <li>
+                  <a href="#">롯데케피탈</a>
+                </li>
+                <li>
+                  <span>롯데건설</span>
+                </li>
+                <li>
+                  <a href="#">-롯데건설</a>
+                </li>
+                <li>
+                  <a href="#">-롯데캐슬</a>
+                </li>
+                <li>
+                  <span>한국후지필름</span>
+                </li>
+                <li>
+                  <a href="#">-한국후지필름</a>
+                </li>
+                <li>
+                  <a href="#">-한국후지필름 쇼핑몰</a>
+                </li>
+                <li>
+                  <span>롯데알미늄</span>
+                </li>
+                <li>
+                  <a href="#">-롯데알미늄</a>
+                </li>
+                <li>
+                  <a href="#">-롯데이라이프</a>
+                </li>
+                <li>
+                  <a href="#">롯데케미칼</a>
+                </li>
+                <li>
+                  <a href="#">롯데엠시시</a>
+                </li>
+                <li>
+                  <a href="#">캐논코리아</a>
+                </li>
+                <li>
+                  <a href="#">롯데기공</a>
+                </li>
+                <li>
+                  <a href="#">롯데인재개발원</a>
+                </li>
+                <li>
+                  <a href="#">롯데이노베이트</a>
+                </li>
+                <li>
+                  <a href="#">롯데자이언츠</a>
+                </li>
+                <li>
+                  <a href="#">롯데스카이힐CC</a>
+                </li>
+                <li>
+                  <a href="#">대홍기획</a>
+                </li>
+                <li>
+                  <a href="#">마이비</a>
+                </li>
+                <li>
+                  <a href="#">롯데중앙연구소</a>
+                </li>
+                <li>
+                  <a href="#">롯데로지스틱스</a>
+                </li>
+                <li>
+                  <a href="#">롯데재단</a>
+                </li>
+                <li>
+                  <span>롯데하이마트</span>
+                </li>
+                <li>
+                  <a href="#">-롯데하이마트</a>
+                </li>
+                <li>
+                  <a href="#">롯데콘서트홀</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_links">
+            <a href="#"
+              ><img src="./img/affi-list.png" alt="" /><span class="screen_out"
+                >lotte resort</span
+              ></a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
